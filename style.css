@@ -1,0 +1,74 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #D6F5FF;
+    color:#333;
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    text-align:center ;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align:center;
+    font-size: 30px;
+        color: #0099cc;
+    margin-bottom: 20px;
+}
+p{
+     font-size: 20px;
+    line-height: 1.8;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+button{
+    text-align: center;
+    background-color: #ff6600;
+    color: white;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+    
+}
+a{
+    color: rgb(53, 115, 153);
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.cards{
+    background-color: white;
+    width: 320px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+    text-align: center;
+    padding-bottom: 20px;
+    display:flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+.cards img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+.cards h3{
+    color:#0099cc;
+    margin:20px;
+}
+.cards p{
+    width:90%;
+    font-size:17px;
+}
+.cards button{
+    margin-top:15px;
+}
