@@ -1,0 +1,67 @@
+ <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ <header class="banner">
+    <h1>Fale Conosco</h1>
+    <p>Estamos prontos para planejar sua próxima viagem.</p>
+</header>
+
+<section class="infos">
+
+<div class="box">
+<h3>📍 Endereço</h3>
+<p>Copacabana<br>Rio de Janeiro - RJ</p>
+</div>
+
+<div class="box">
+<h3>📞 Telefone</h3>
+<p>(31) 99148-3685</p>
+</div>
+
+<div class="box">
+<h3>📧 E-mail</h3>
+<p>contato@praiacarioca.com</p>
+</div>
+
+</section>
+
+<section class="formulario">
+
+<h2>Envie sua mensagem</h2>
+
+<input type="text" placeholder="Nome">
+
+<input type="email" placeholder="E-mail">
+
+<input type="tel" id="telefone" placeholder="Telefone">
+<textarea placeholder="Escreva sua mensagem"></textarea>
+
+<button>Enviar</button>
+<script>
+  const telefone = document.getElementById("telefone");
+ if (telefone) {
+    telefone.addEventListener("input", function () {
+
+        let valor = telefone.value.replace(/\D/g, "");
+
+        if (valor.length > 11) {
+            valor = valor.substring(0, 11);
+        }
+
+        valor = valor.replace(/^(\d{2})(\d)/, "($1) $2");
+        valor = valor.replace(/(\d{5})(\d{4})$/, "$1-$2");
+
+        telefone.value = valor;
+    });
+}
+</script>
+</body>
+</html>

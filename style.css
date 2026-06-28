@@ -16,14 +16,12 @@ h2{
         color: #0099cc;
     margin-bottom: 20px;
 }
-p{
-     font-size: 20px;
-    line-height: 1.8;
-    width: 80%;
-    margin: auto;
-    margin-bottom: 30px;
-}
-button{
+ p{
+    font-size:20px;
+    line-height:1.8;
+    margin-bottom:30px;
+ }
+ button{
     text-align: center;
     background-color: #ff6600;
     color: white;
@@ -34,15 +32,22 @@ button{
     cursor: pointer;
     transition: 0.3s;
     
-}
+ }
 a{
     color: rgb(53, 115, 153);
     text-align: center;
     padding: 20px;
     margin-top: 40px;
 }
+ .containers{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+ }
 
-.cards{
+ .cards{
     background-color: white;
     width: 320px;
     border-radius: 15px;
@@ -50,12 +55,8 @@ a{
     box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
     text-align: center;
     padding-bottom: 20px;
-    display:flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 50px;
-    flex-wrap: wrap;
-}
+    margin-top: 20px;
+ }
 .cards img{
     width:100%;
     height:220px;
@@ -71,4 +72,175 @@ a{
 }
 .cards button{
     margin-top:15px;
+}
+ .banner{
+    background-image:url("banner2.jpg");
+    background-size:cover;
+    background-position:center;
+    height:320px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+    text-shadow:2px 2px 8px black;
+}
+
+.banner h1{
+    font-size:60px;
+    margin:0;
+}
+
+.banner p{
+    font-size:22px;
+    width:auto;
+    color:white;
+}
+
+.infos{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:-40px;
+    flex-wrap:wrap;
+}
+.box{
+    background:white;
+    width:260px;
+    min-height:180px;
+    padding:25px;
+    border-radius:15px;
+    border-top:6px solid #0099cc;
+    box-shadow:0 4px 15px rgba(0,0,0,.2);
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+}
+
+.box h3{
+    color:#0099cc;
+    margin-bottom:12px;
+}
+
+.box p{
+    width:100%;
+    margin:4px 0;
+    text-align:center;
+    font-size:17px;
+    line-height:1.5;
+}
+
+.formulario{
+    background:white;
+    width:650px;
+    margin:50px auto;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,.2);
+}
+
+.formulario input,
+.formulario textarea{
+    width:100%;
+    padding:15px;
+    margin:12px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+    box-sizing:border-box;
+}
+
+.formulario textarea{
+    height:140px;
+}
+
+.formulario button{
+    width:100%;
+}
+
+.menu{
+    text-align:center;
+    margin:20px;
+}
+
+.menu a{
+    margin:0 20px;
+    text-decoration:none;
+    font-weight:bold;
+}
+.banner-promo{
+    background-image:url("Cover\ photo.jpg");
+    background-size:cover;
+    background-position:center;
+    height:320px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+    text-shadow:2px 2px 8px black;
+}
+
+.banner-promo h1{
+    font-size:60px;
+    margin:0;
+}
+
+.banner-promo p{
+    color:white;
+    width:auto;
+    font-size:22px;
+}
+.banner-sobre{
+    background-image:url("header praia.jpg");
+    background-size:cover;
+    background-position:center;
+    height:320px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+    text-shadow:2px 2px 8px black;
+}
+
+.banner-sobre h1{
+    font-size:60px;
+    margin:0;
+}
+
+.banner-sobre p{
+    color:white;
+    width:auto;
+    font-size:22px;
+}
+
+.sobre{
+    width:80%;
+    margin:50px auto;
+    background:white;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,.2);
+    border-top:6px solid #0099cc;
+}
+
+.sobre h2{
+    margin-top:0;
+}
+
+.sobre p{
+    width:100%;
+    text-align:justify;
+    font-size:18px;
+    line-height:1.8;
 }
